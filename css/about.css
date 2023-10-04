@@ -1,0 +1,66 @@
+@charset "utf-8";
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 상단메뉴 */
+header .btn {
+    position: fixed;
+    top: 35px;
+    right: 40px;
+    transform: translate(-50%);
+    z-index: 99;
+    cursor: pointer;
+}
+header .btn i{
+    font-size: 2rem;
+}
+
+header nav ul{
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    font-size: 1.5rem;
+    text-align: right;
+    display: none;
+}
+
+/* header */
+header .logo{
+    position: fixed;
+    top: 1rem; left: 0; right: 0;
+    /* z-index: 100; */
+    display: flex;
+    height: 4.5rem;
+}
+header .logo img {
+    height: 3rem;
+    margin-left: 2.8rem;
+    margin-top: 0.6rem;
+}
+header .logo a {
+    display: block;
+    height: 4.5rem;
+}
+
+header h1{
+    margin: 60px auto;
+    text-align: center;
+}
+
+/* main */
+
+/* footer */
+footer{
+    width: 100%;
+    height: 8vh;
+    position: relative;
+}
+footer p{
+    position: absolute;
+    bottom: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+    color: #818181;
+}

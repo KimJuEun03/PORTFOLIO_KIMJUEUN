@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- it's me -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Common.css">
+    <link rel="stylesheet" href="css/responsivemain.css">
+    <script src="js/main-active.js"defer></script>
+    <script src="js/main.js" defer></script>    
+
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/b7a602df55.js" crossorigin="anonymous"></script>
+    <!-- skrollr -->
+    <script src="js/skrollr.min.js"></script>
+     <!-- font -->
+     <script>
+         (function(d) {
+             var config = {
+                 kitId: 'koq5orq',
+                 scriptTimeout: 3000,
+                 async: true
+                },
+                h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            })(document);
+      </script>
+ 
+</head>
+<body>
+    <header>
+        <div class="logo" data-menuanchor="page1">
+             <a href="index.html"><img src="image/jueun.png" alt="주은이네"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="artworks.html">ARTWORKS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+         <!-- main page1 -->
+         <section class="f1">
+            <div class="intro">
+                <video data-autoplay muted loop>
+                    <source src="video/ex.mp4">
+                </video>
+            </div>
+            <div class="scroll"><i class="fa-solid fa-chevron-down"></i></div>
+        </section>
+
+        <!-- page2 -->
+        <section class="f2">
+            <div class="textwrap">
+                <h1 class="active"><span></span></h1>
+                <i>디자이너 <br><b>김주은</b> 입니다.</i>
+            </div>
+            <a href="about.html">
+                <div class="f2img" autoplay muted loop></div>
+            </a>
+        </section>
+
+        <!-- page3 -->
+        <section class="f3" >
+            <a href="artworks.html">
+                <div class="media" data-0="top: 80rem" data-2000="top:15rem">
+                    <h1>MEDIA DESIGN</h1>
+                    <div class="media-box"></div>
+                    <video data-autoplay muted loop>
+                        <source src="video/미스터션샤인 모션그래픽 오프닝.mp4">
+                    </video>
+                </div>
+            </a>
+        </section>
+
+        <!-- page4 -->
+        <section class="f4">
+            <a href="artworks.html">
+                <div class="media" data-0="top: 70rem" data-2400="top:15rem">
+                    <h1>PUBLICATION DESIGN</h1>
+                    <div class="media-box"></div>
+                    <video data-autoplay muted loop>
+                        <source src="video/미스터션샤인 모션그래픽 오프닝.mp4">
+                    </video>
+                </div>
+            </a>
+        </section>
+        <!-- page 5 -->
+        <section class="f5">
+            <a href="artworks.html">
+                <div class="media" data-0="top: 60rem" data-3500="top:15rem">
+                    <h1>ILLUSTRATION</h1>
+                    <div class="media-box"></div>
+                    <video data-autoplay muted loop>
+                        <source src="video/미스터션샤인 모션그래픽 오프닝.mp4">
+                    </video>
+                </div>
+            </a>
+        </section>
+
+        <div class="contact">
+            <a href="contact.html">
+                <h1>CONTACT</h1>
+                <div class="circle"></div>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <p> &copy; 2023.KIMJUEUN. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script>
+        skrollr.init()
+    </script>
+    
+
+</body>
+</html>

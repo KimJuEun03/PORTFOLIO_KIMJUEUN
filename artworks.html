@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTWORKS</title>
+    <!-- xeicon -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- mix file -->
+    <script src="js/mixitup.js"></script>
+    <script src="js/artworks.js" defer></script>
+    <!-- me -->
+    <link rel="stylesheet" href="css/artworks.css">
+    <link rel="stylesheet" href="css/Common.css">
+    <!-- font -->
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'koq5orq',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+</head>
+<body>
+    <header>
+        <div class="logo" data-menuanchor="page1">
+            <a href="index.html"><img src="image/jueun.png" alt="주은이네"></a>
+        </div>
+       <div class="inner">
+           <h1>Artwork</h1>
+           <div class="container">
+               <button type="button" data-filter="all">All</button>
+               <button type="button" data-filter=".media">MEDIA DESIGN</button>
+               <button type="button" data-filter=".publication">PUBLICATION DESIGN</button>
+               <button type="button" data-filter=".illustration">ILLUSTRATION</button>
+           </div>
+       </div>
+        <div class="btn">
+            <i class="xi-bars"></i>
+            <nav>
+                <ul>
+                    <li data-num="01"><a href="index.html">HOME</a></li>
+                    <li data-num="02"><a href="about.html">ABOUT</a></li>
+                    <li data-num="03"><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            </div>
+    </header>
+    <main>
+        <!-- popup -->
+        <div class="media1">
+            <div id="popupBG">
+            </div>
+            <div id="popupBox">
+                <div class="popup">
+                    <img src="image/미니언즈1.png" alt="">
+                    <iframe width="1400" height="788" src="https://www.youtube.com/embed/py7-UC8_TZE?si=Z5vgDiWWvSJcAO5n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <img src="image/미니언즈.png" alt="">
+                </div>
+                <div class="popup">
+                    <img src="image/김주은_시트-15.jpg" alt="">
+                </div>
+                <div class="popup">
+                    <img src="image/김주은_시트-16.jpg" alt="">
+                </div>
+                <div class="popup">
+                    <img src="image/김주은_시트-21.jpg" alt="">
+                </div>
+                <button id="popCloseBtn">X</button>
+            </div>
+        </div>
+
+        <!-- button content -->
+        <div class="mix-button">
+            <div class="mix media">
+                <h3>비디오</h3>
+            </div>
+            <div class="mix media">
+                <h3>비디오</h3>
+            </div>
+            <div class="mix publication">
+                <h3>출판물</h3>
+            </div>
+            <div class="mix illustration">
+                <h3>일러</h3>
+            </div>
+            <div class="mix illustration">
+                <h3>일러</h3>
+            </div>
+            <div class="mix illustration">
+                <h3>일러</h3>
+            </div>
+            <div class="mix illustration">
+                <h3>일러</h3>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p> &copy; 2023.KIMJUEUN. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+
+    <script>
+        let mixer = mixitup('.mix-button',{
+            "animation": {
+            "duration": 250,
+            "nudge": true,
+            "reverseOut": false,
+            "effects": "fade translateZ(-100px)"
+    }
+        })
+    </script>
+</body>
+</html>

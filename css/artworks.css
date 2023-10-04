@@ -1,0 +1,134 @@
+@charset "utf-8";
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 상단메뉴 */
+header .btn {
+    position: fixed;
+    top: 35px;
+    right: 40px;
+    transform: translate(-50%);
+    z-index: 99;
+    cursor: pointer;
+}
+header .btn i{
+    font-size: 2rem;
+}
+
+header nav ul{
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    font-size: 1.5rem;
+    text-align: right;
+    display: none;
+}
+
+/* header */
+header .logo{
+    position: fixed;
+    top: 1rem; left: 0; right: 0;
+    /* z-index: 100; */
+    display: flex;
+    height: 4.5rem;
+}
+header .logo img {
+    height: 3rem;
+    margin-left: 2.8rem;
+    margin-top: 0.6rem;
+}
+header .inner{
+    width: 80%;
+    margin: 60px auto;
+    text-align: center;
+}
+header .inner .container button{
+    font-family: 'Pretendard-Regular';
+    background: none;
+    font-size: 1.2rem;
+    padding: 3% 2%;
+    color:#616161;
+    border: none;
+    cursor: pointer;
+}
+header .inner .container button:hover{
+    color: black;
+}
+
+.container, .mix-button{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.mix{
+    display: inline-block;
+    color: rgba(0, 0, 0, 0);
+    background-color: rgb(40, 66, 66);
+    width: 20%;
+    height: 30vh;
+    margin: 1em 2.3%;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.mix h3{
+    width:100%; height: 100%;
+    line-height:17.5rem;
+    font-size: 1.7rem;
+    font-weight: 300;
+    text-align: center;
+}
+.mix h3:hover{
+    color: white;
+    background-color: #0000006e;
+}
+.mix.media:nth-child(1){
+    background: url('../video/썸네일.gif')no-repeat center/cover;
+}
+
+/* popup */
+#popupBG{
+    position: fixed;
+    width: 100%;
+    height: 1000px;
+    top: 0; left: 0;
+    background-color: #000000;
+    opacity: 0.8;
+    display: none;
+}
+#popupBox{
+    position: absolute;
+    background: gold;
+    width: 1400px;height: 100vh;
+    display: none;
+}
+
+#popupBox #popCloseBtn {
+    position: absolute;
+    top: 0.5rem;
+    right: 2rem;
+    width: 45px; height: 45px;
+    background-color: white;
+    font-size: 1.3rem;
+    opacity: 0.5;
+    border: none;
+    border-radius: 50px;
+    position: fixed;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: 8vh;
+    position: relative;
+}
+footer p{
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+    color: #818181;
+}
+
+

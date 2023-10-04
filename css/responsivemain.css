@@ -1,0 +1,33 @@
+@media screen and (max-width:1468px){
+    html{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    html{
+        font-size: 12px;
+    }
+    section {
+        width: 90%;
+    }
+    .f2 .textwrap{
+        left: 45%;
+    }
+    .f2 .f2img{
+        width: 20rem;
+        height: 20rem;
+        left: 80%;
+    } 
+}
+
+@media screen and (max-width:750px) {
+html{
+    font-size: 10px;
+}    
+}
+@media screen and (max-width:500px) {
+html{
+    font-size: 8px;
+}    
+}
